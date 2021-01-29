@@ -1,0 +1,549 @@
+{% extends 'base.html' %}
+{% load bootstrap4 %}
+{% block content %}
+{%load static%}
+
+	  <section id="home-section" class="hero">
+	  	<h3 class="vr">dare to create >></h3>
+		  <div class="home-slider js-fullheight owl-carousel">
+	      <div class="slider-item js-fullheight">
+	      	<div class="overlay"></div>
+	        <div class="container-fluid p-0">
+	          <div class="row d-md-flex no-gutters slider-text js-fullheight align-items-center justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third order-md-last img js-fullheight" style="background-image:url(/static/images/pic3.jpg);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex js-fullheight align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+			            <h1 class="mb-4 mt-3"> <span>Modern</span> Problems Require <span>Digital</span> Solutions</h1>
+			            <p>We provide software solutions to organisations and businesses.</p>
+			            
+			            <p><button  class="btn btn-warning px-5 py-3 mt-3" data-toggle="modal" data-target="#quoteModal">Request Quote</button></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+
+	     
+	    </div>
+    </section>
+		
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt ftco-services bg-light" id="services-section">
+      <div class="container"><br><br>
+		<h2 class="text-center" style="font-family: monospace !important; color: #0000ff;"><span style="color: #ffa500;"><i class="fas fa-laptop-code"></i></span> Services</h2><br><br>
+        <div class="row no-gutters">
+			
+			<!-- <div class="row d-flex contact-info mb-5"> -->
+				<div class="col-md-4 col-lg-4 ">
+					<div class="align-self-stretch box p-4 text-center " id="service-box">
+						<div class="icon  align-items-center justify-content-center">
+							<img src="{% static 'images/website.svg'%}" alt="website" style="width: 200px; height: 200px;">
+						</div><hr>
+						<h4 class="mb-4" class="text-center" >Web Design & Development</h4>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4 ">
+					<div class="align-self-stretch box p-4 text-center" id="service-box">
+						<div class="icon  align-items-center justify-content-center">
+							<img src="{% static 'images/ecom.svg'%}" style="width: 200px; height: 200px;">
+						</div><hr>
+						<h4 class="mb-4" class="text-center">E-commerce Development</h4>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4  ">
+					<div class="align-self-stretch box p-4 text-center" id="service-box">
+						<div class="icon  align-items-center justify-content-center">
+							<img src="{% static 'images/software.svg'%}" style="width:200px; height: 200px;">
+						</div><hr>
+						<h4 class="mb-4" class="text-center">Software Development</h4>
+					</div>
+				</div>
+				
+			  <!-- </div> -->
+        </div>
+      </div><br>
+    </section><hr>
+
+    <!-- <section class="ftco-section-2 img" style="background-image: url(images/bg_3.jpg);">
+    	<div class="container">
+    		<div class="row d-md-flex justify-content-end">
+    			<div class="col-md-6">
+    				<div class="row">
+    					<div class="col-md-12">
+    						<a href="#" class="services-wrap ftco-animate">
+    							<div class="icon d-flex justify-content-center align-items-center">
+    								<span class="ion-ios-arrow-back"></span>
+    								<span class="ion-ios-arrow-forward"></span>
+    							</div>
+    							<h2>Market Research</h2>
+    							<p>Even the all-powerful Pointing has no control about the blind.</p>
+    						</a>
+    						<a href="#" class="services-wrap ftco-animate">
+    							<div class="icon d-flex justify-content-center align-items-center">
+    								<span class="ion-ios-arrow-back"></span>
+    								<span class="ion-ios-arrow-forward"></span>
+    							</div>
+    							<h2>Financial Services</h2>
+    							<p>Even the all-powerful Pointing has no control about the blind.</p>
+    						</a>
+    						<a href="#" class="services-wrap ftco-animate">
+    							<div class="icon d-flex justify-content-center align-items-center">
+    								<span class="ion-ios-arrow-back"></span>
+    								<span class="ion-ios-arrow-forward"></span>
+    							</div>
+    							<h2>Online Marketing</h2>
+    							<p>Even the all-powerful Pointing has no control about the blind.</p>
+    						</a>
+    						<a href="#" class="services-wrap ftco-animate">
+    							<div class="icon d-flex justify-content-center align-items-center">
+    								<span class="ion-ios-arrow-back"></span>
+    								<span class="ion-ios-arrow-forward"></span>
+    							</div>
+    							<h2>24/7 Help &amp; Support</h2>
+    							<p>Even the all-powerful Pointing has no control about the blind.</p>
+    						</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+
+    <section class="ftco-section ftco-project bg-light" id="projects-section">
+		
+    	<div class="container px-md-5">
+			<h2 class="text-center" style="font-family: monospace !important; color:#0000ff;"><span style="color: #ffa500;"><i class="fas fa-briefcase"></i></span> Works </h2><br>
+
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading">Web</span>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-12 testimonial">
+            <div class="carousel-project owl-carousel">
+            	<div class="item">
+            		<div class="project">
+		    					<div class="img">
+				    				<img src="{% static 'images/gohf.jpg'%}" class="img-fluid" alt="project" style="height: 300px;">
+				    				<div class="text px-4">
+				    					<h3><a class="btn btn-outline-danger" href="https://gardenofhopefoundation.org">Link</a></h3>
+				    					<span>Website</span>
+				    				</div>
+			    				</div>
+		    				</div>
+            	</div>
+            	<div class="item">
+            		<div class="project">
+		    					<div class="img">
+				    				<img src="{% static 'images/auto.jpg'%}" class="img-fluid" alt="project" style="height: 300px;">
+				    				<div class="text px-4">
+				    					<h3><a class="btn btn-outline-danger" href="https://autopoint.co.ke">Link</a></h3>
+				    					<span>E-commerce</span>
+				    				</div>
+			    				</div>
+		    				</div>
+            	</div>
+            	<div class="item">
+            		<div class="project">
+		    					<div class="img">
+				    				<img src="{% static 'images/amara.jpg'%}" class="img-fluid" alt="project" style="height: 300px;">
+				    				<div class="text px-4">
+				    					<h3><a class="btn btn-outline-danger" href="https://amaracleaning.co.ke">Link</a></h3>
+				    					<span>Website</span>
+				    				</div>
+			    				</div>
+		    				</div>
+            	</div>
+            	
+            	
+            	
+            </div>
+          </div>
+    		</div>
+    	</div>
+    </section>
+		
+
+		<section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container"><br><br>
+			<h2 class="text-center" style="font-family: monospace !important; color:#0000ff;"><span style="color: #ffa500;"><i class="far fa-question-circle"></i></span> Who We Are</h2><br>
+
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(/static/images/tl.jpg);">
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 py-5">
+    				<div class="py-md-5">
+	    				<div class="row justify-content-start pb-3">
+			          <div class="col-md-12 heading-section ftco-animate">
+			          	<span class="subheading text-center">Welcome to technolabs</span>
+			            <h2 class="mb-4 text-center" style="font-size: 34px; text-transform: lowercase; color: #ffa500;">a software development agency.</h2>
+			            <p style="width: 80%; margin: auto; font-family: monospace;">We are a software development agency that's made up of a team of young techies who are passionate about 
+							coding and technology. <br><br>Our mission is to use software to provide digital solutions to problems 
+							encountered by small and medium enterprises.<br><br> By using the best coding practices and modern technologies, we create 
+							high quality software solutions that cater to the needs of our clients.</p>
+			          </div>
+			        </div>
+		          
+		        </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+    <!-- <section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-6 heading-section text-center ftco-animate">
+          	<span class="subheading">About Us</span>
+            <h2 class="mb-4">Our Staff</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          </div>
+        </div>
+        <div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/staff-1.jpg);"></div>
+							</div>
+							<div class="text d-flex align-items-center pt-3 text-center">
+								<div>
+									<h3 class="mb-2">Lloyd Wilson</h3>
+									<span class="position mb-4">CEO, Founder</span>
+									<div class="faded">
+										<ul class="ftco-social text-center">
+			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              </ul>
+		              </div>
+		            </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/staff-2.jpg);"></div>
+							</div>
+							<div class="text d-flex align-items-center pt-3 text-center">
+								<div>
+									<h3 class="mb-2">Rachel Parker</h3>
+									<span class="position mb-4">Web Designer</span>
+									<div class="faded">
+										<ul class="ftco-social text-center">
+			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              </ul>
+		              </div>
+		            </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/staff-3.jpg);"></div>
+							</div>
+							<div class="text d-flex align-items-center pt-3 text-center">
+								<div>
+									<h3 class="mb-2">Ian Smith</h3>
+									<span class="position mb-4">Web Developer</span>
+									<div class="faded">
+										<ul class="ftco-social text-center">
+			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              </ul>
+		              </div>
+		            </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/staff-4.jpg);"></div>
+							</div>
+							<div class="text d-flex align-items-center pt-3 text-center">
+								<div>
+									<h3 class="mb-2">Alicia Henderson</h3>
+									<span class="position mb-4">Graphic Designer</span>
+									<div class="faded">
+										<ul class="ftco-social text-center">
+			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
+			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			              </ul>
+		              </div>
+		            </div>
+							</div>
+						</div>
+					</div>
+				</div>
+    	</div>
+    </section> -->
+
+		<section class="ftco-section testimony-section" id="testimony-section">
+      <div class="container">
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+            <h2 class="mb-4">Happy Clients</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate justify-content-center">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img" style="background-image: url(/static/images/dan.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text px-4 pb-5">
+                    <p class="mb-4">Our go to techies. We love working with these guys</p>
+                    <p class="name">Daniel Njoroge</p>
+                    <span class="position">Tiny House Productions</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img" style="background-image: url(/static/images/Joe1.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text px-4 pb-5">
+                    <p class="mb-4">I got recommended by a friend. Thanks for making my company website look Awesome</p>
+                    <p class="name">Joe Odongo</p>
+                    <span class="position">Blogger</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img" style="background-image: url(/static/images/rob.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text px-4 pb-5">
+                    <p class="mb-4">We've worked with this agency on a number of internal software and I would recommend them.</p>
+                    <p class="name">Robert Mwai</p>
+                    <span class="position">Creative Heritage</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img" style="background-image: url(/static/images/su.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text px-4 pb-5">
+                    <p class="mb-4">Our cleaning company needed a website and the website we got was impressive. Good Job!</p>
+                    <p class="name">Susan Kariithi</p>
+                    <span class="position">Amara Cleaning</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap text-center py-4 pb-5">
+                  <div class="user-img" style="background-image: url(/static/images/doreen.jpg)">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="icon-quote-left"></i>
+                    </span>
+                  </div>
+                  <div class="text px-4 pb-5">
+                    <p class="mb-4">I like the continual support we receive from working with you guys.</p>
+                    <p class="name">Doreen Aketch</p>
+                    <span class="position">Joy Supermarket</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="ftco-section bg-light" id="blog-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading">Blog</span>
+            <h2 class="mb-4">Our Blog</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center pt-2 mb-4 topp">
+              		<div class="one mr-2">
+              			<span class="day">12</span>
+              		</div>
+              		<div class="two">
+              			<span class="yr">2019</span>
+              			<span class="mos">March</span>
+              		</div>
+              	</div>
+                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <div class="d-flex align-items-center mt-4 meta">
+	                <p class="mb-0"><a href="{% url 'view_blog' %}" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center pt-2 mb-4 topp">
+              		<div class="one mr-2">
+              			<span class="day">10</span>
+              		</div>
+              		<div class="two">
+              			<span class="yr">2019</span>
+              			<span class="mos">March</span>
+              		</div>
+              	</div>
+                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <div class="d-flex align-items-center mt-4 meta">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+              	<div class="d-flex align-items-center pt-2 mb-4 topp">
+              		<div class="one mr-2">
+              			<span class="day">05</span>
+              		</div>
+              		<div class="two">
+              			<span class="yr">2019</span>
+              			<span class="mos">March</span>
+              		</div>
+              	</div>
+                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <div class="d-flex align-items-center mt-4 meta">
+	                <p class="mb-0"><a href="#" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+	                <p class="ml-auto mb-0">
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h2 class="mb-4">Reach Out</h2>
+          </div>
+        </div>
+        
+		<div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-map-signs"></span>
+					</div>
+					<h3 class="mb-4">Address</h3>
+				  <p>31170 - 00600, Nairobi</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-phone2"></span>
+					</div>
+					<h3 class="mb-4">Contact Number</h3>
+				  <p><a href="tel://1234567920">(+254) 741 795 512</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4">Email Address</h3>
+				  <p><a href="mailto:info@technolabs.co.ke">info@technolabs.co.ke</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-globe"></span>
+					</div>
+					<h3 class="mb-4">Website</h3>
+				  <p><a href="#">Yes</a></p>
+				</div>
+			</div>
+		  </div>
+      </div><br>
+    </section>
+		
+  
+    <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel" style="font-family: monospace;">Quote Request Form:</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+				{{form.media}}
+				
+			  <form action="{% url 'quote'%}" method="post" enctype="multipart/form-data">
+				{%csrf_token%}
+				{% bootstrap_form form layout='inline' %}
+				<input type="submit"  class="btn btn-outline-success" value="Submit">	
+				
+			  </form>
+			</div>
+			
+		  </div>
+		</div>
+		</div>
+
+{% endblock %}
+
