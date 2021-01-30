@@ -29,7 +29,7 @@ MODE=config("MODE", default="dev")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
@@ -92,18 +92,14 @@ if config('MODE')=="dev":
        }
     }
 
+# production
 else:
    DATABASES = {
-    'default': {
-    'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    'NAME': 'tl_website_db',
-    'USER': 'gichimu',
-    'PASSWORD': 'triocom',
-    'HOST': 'localhost',
-    'PORT': '5432',
-  }
-
+       'default': dj_database_url.config(
+           default=config('DATABASE_URL')
+       )
    }
+
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
