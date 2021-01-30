@@ -29,7 +29,7 @@ MODE=config("MODE", default="dev")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['www.technolabs.co.ke']
+ALLOWED_HOSTS = ['technolabs.co.ke']
 
 
 # Application definition
